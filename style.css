@@ -12,6 +12,19 @@ body {
     display: block;
 }
 
+#title {
+    position: absolute;
+    top: 20px; /* Adjust vertical position as needed */
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
+    font-size: 3em; /* Make it large */
+    font-weight: bold;
+    color: #6a4a3a; /* A slightly different brown/bread color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Optional subtle shadow */
+    z-index: 10; /* Ensure it's above the canvas */
+    pointer-events: none; /* Make sure it doesn't interfere with clicks on canvas */
+}
+
 /* Changed ID from counter to score */
 #score {
     position: absolute;
